@@ -1,0 +1,7 @@
+snapshots:
+  - name: snapshot_in_main_using_source_from_other
+    relation: source('other_workspace', 'cities_other_workspace')
+    config:
+      strategy: check
+      unique_key: City
+      check_cols: all

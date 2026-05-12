@@ -1,0 +1,12 @@
+sources:
+  - name: main_workspace
+    schema: dbt
+    tables:
+      - name: cities
+  - name: other_workspace
+    database: OtherLakehouse
+    schema: dbt
+    config:
+      workspace_name: OtherWorkspace
+    tables:
+      - name: cities_other_workspace

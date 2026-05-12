@@ -1,0 +1,8 @@
+seeds:
+  - name: cities
+    config:
+      database: MainLakehouse
+  - name: cities_other_workspace
+    config:
+      database: OtherLakehouse
+      workspace_name: OtherWorkspace

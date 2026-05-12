@@ -1,0 +1,9 @@
+snapshots:
+  - name: snapshot_in_other_using_source_from_main
+    relation: source('main_workspace', 'cities')
+    config:
+      database: OtherLakehouse
+      workspace_name: OtherWorkspace
+      strategy: check
+      unique_key: City
+      check_cols: all

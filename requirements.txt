@@ -1,0 +1,2 @@
+dbt-core==1.11.9
+dbt-fabricspark==1.10.1
