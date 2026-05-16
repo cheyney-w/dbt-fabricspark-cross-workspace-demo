@@ -24,3 +24,8 @@ dbt_project:
         retry_all: true
         spark_config:
           name: "dbt_project"
+          numExecutors: 8
+          conf:
+            spark.dynamicAllocation.enabled: true
+            spark.dynamicAllocation.minExecutors: 8
+
